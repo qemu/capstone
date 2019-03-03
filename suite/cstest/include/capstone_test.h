@@ -35,9 +35,6 @@
 		}																\
 	} while (0)
 
-#define NUMARCH 10
-#define NUMMODE 35
-#define NUMOPTION 41
 #define MAXMEM 1024
 
 typedef struct {
@@ -51,9 +48,6 @@ typedef struct {
 	unsigned int second_value;
 } double_dict;
 
-extern single_dict arches[];
-extern single_dict modes[];
-extern double_dict options[];
 extern char *(*function)(csh *, cs_mode, cs_insn*);
 
 int get_index(double_dict d[], unsigned size, const char *str);
